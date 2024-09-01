@@ -21,7 +21,7 @@ namespace SampleLogger.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-            _logger.LogInformation("Logging test working fine.");
+            _logger.LogInformation("Get weather forecast called!");
 
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
